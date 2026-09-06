@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,14 @@
     <body>
         <header>
             <h1>Blushé</h1>
+            <h2>Contacto</h2>
 
-            <nav>
+            <nav aria-label="Navegación Principal">
                 <ul>
-                    <li><a href="index.html"></a>Inicio</li>
-                    <li><a href="productos.html"></a>Productos</li>
-                    <li><a href="tutoriales.html"></a>Tutoriales</li>
-                    <li><a href="contacto.html"></a>Contacto</li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -64,9 +65,9 @@
                     <input type="text" id="asunto"  name="asunto" required>
 
                     <label for="mensaje">Mensaje:</label>
-                    <textarea type="mensaje" id="mensaje"  name="mensaje" required></textarea>
+                    <textarea id="mensaje"  name="mensaje" required></textarea>
 
-                    <button type="button">Enviar</button>
+                    <button type="submit">Enviar</button>
 
                     </fieldset>
                 </form>
@@ -79,13 +80,13 @@
         <footer>
             <p>Blushé - Tienda de maquillaje</p>
 
-            <nav>
+            <nav aria-label="Redes Sociales">
                 <h2>Síguenos en redes sociales</h2>
 
                 <ul>
                     <li>
                         <a href="#" aria-label="Instagram de Blushé">
-                            <span>Instragram</span>
+                            <span>Instagram</span>
                             <span>@blushe.cosmetics</span>
                         </a>
                     </li>
@@ -99,7 +100,7 @@
 
                     <li>
                         <a href="#" aria-label="Facebook de Blushé">
-                            <span>Instragram</span>
+                            <span>Facebook</span>
                             <span>Blushé Cosmetics</span>
                         </a>
                     </li>
