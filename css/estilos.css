@@ -1,0 +1,34 @@
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.banner {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.banner-img {
+    width:100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+.categooria {
+    margin-bottom: 50px;
+    padding: 0 20px;
+    animation: fadeIn 0.8s case-in;
+}
+.categoria h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a15c6e;
+}
+.grid-productos {
+    display: grid;
+    grid-template-columnd: repeat (3, 1fr);
+    gap:25px;
+}
