@@ -5,12 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blushé</title>
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/inicio.css">
     </head>
     <body>
         <header>
-            <h1>Blushé</h1>
-            <h2>Inicio</h2>
+                <img src="img/logo.png" alt="Logo Blushe" class="logo-blushe">
 
             <nav aria-label="Navegación Principal">
                 <ul>
@@ -22,8 +21,19 @@
             </nav>
         </header>
 
+        <section class="banner-oferta">
+            <div class="banner-texto">
+            <span>OFERTA ESPECIAL</span>
+            <h2>¡20% de descuento en tu compra!</h2>
+            <p>Descubre nuestros productos y crea tu propio estilo</p>
+            <div class="botones-estilo">
+            <a href="productos.html" class="btn-estilo">Ver productos</a>
+            </div>
+            </div>
+        </section>
+
         <main>
-            <section>
+            <section class="seccion-destacada">
             <h2>Blushé te da la bienvenida: inspírate, experimenta y crea tu propio estilo.</h2>
 
             <p>
@@ -31,48 +41,64 @@
             </p>
             </section>
 
-            <section>
+            <section class="categorias">
                 <h2>Descubre nuestras categorías</h2>
 
                 <article>
+                    <a href="productos.html#rostro">
+                        <div class="categoria-texto">
                     <h3>Rostro</h3>
                     <p>
                         Encuentra productos para preparar y complementar tu maquillaje.
                     </p>
+                    </div>
+                    <img src="img/Rostro.png" alt="Maquillaje para el rostro">
+                    </a>
                 </article>
 
                 <article>
+                    <a href="productos.html#ojos">
+                        <div class="categoria-texto">
                     <h3>Ojos</h3>
                     <p>
                         Encuentra productos para crear diferentes estilos de maquillaje para tus ojos.
                     </p>
+                    </div>
+                    <img src="img/Ojos.png" alt="Maquillaje para los ojos">
+                    </a>
                 </article>
+
                 <article>
+                    <a href="productos.html#labios">
+                        <div class="categoria-texto">
                     <h3>Labios</h3>
                     <p>
                         Explora diferentes productos para complementar tu look.
                     </p>
+                    </div>
+                    <img src="img/Labios.png" alt="Maquillaje para labios">
+                    </a>
                 </article>
             </section>
 
-            <section>
-                <h2>Productos destacados</h2>
+            <section class="productos-destacados">
+                <h2 class="titulo-productos">Productos destacados</h2>
 
-                <article>
+                <article class="fondo-base">
                     <h3>Base de maquillaje</h3>
                     <p>
                         Base de cobertura ligera para un acabado natural.
                     </p>
                 </article>
 
-                <article>
+                <article class="fondo-paleta">
                     <h3>Paleta de sombras</h3>
                     <p>
                         Paleta con diferentes tonos para crear distintos looks.
                     </p>
                 </article>
 
-                <article>
+                <article class="fondo-labial">
                     <h3>Labial</h3>
                     <p>
                         Labial de acabado cómodo para complementar tu maquillaje.
@@ -80,41 +106,41 @@
                 </article>
             </section>
 
-            <section>
+            <section class="seccion-destacada">
                 <h2>Encuentra tu estilo</h2>
 
                 <p>
                     Explora nuestros productos y descubre nuevas formas de expresar tu estilo.
                 </p>
+
+                <div class="botones-estilo">
+                    <a href="productos.html" class="btn-estilo">Ver productos</a>
+                    <a href="tutoriales.html" class="btn-estilo">Ver tutoriales</a>
+
+                </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>Blushé - Tienda de maquillaje</p>
 
             <nav aria-label="Redes sociales">
                 <h2>Síguenos en redes sociales</h2>
 
                 <ul>
-                    <li>
-                        <a href="#" aria-label="Instagram de Blushé">
-                            <span>Instagram</span>
-                            <span>@blushe.cosmetics</span>
-                        </a>
+                    <li>                        
+                            <p>Instagram</p>
+                            <p>@blushe.cosmetics</p>
                     </li>
 
-                    <li>
-                        <a href="#" aria-label="Tiktok de Blushé">
-                            <span>Tiktok</span>
-                            <span>@blushe.cosmetics</span>
-                        </a>
+                    <li>                        
+                            <p>Tik Tok</p>
+                            <p>@blushe.cosmetics</p>
                     </li>
 
-                    <li>
-                        <a href="#" aria-label="Facebook de Blushé">
-                            <span>Facebook</span>
-                            <span>Blushé Cosmetics</span>
-                        </a>
+                    <li>                        
+                            <p>Instagram</p>
+                            <p>Blushé Cosmetics</p>
                     </li>
 
                 </ul>
