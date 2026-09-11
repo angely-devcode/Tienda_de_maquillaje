@@ -1,0 +1,284 @@
+/*Estilos generales*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fce7ef;
+    color: #2b2426;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    padding: 40px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+
+/* Encabezado */
+
+header{
+    background-color: #2b2426;
+    padding: 20px 40px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 4px solid #c9a15b;
+}
+
+.logo-blushe{
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1{
+    margin: 0px 0 15px;
+    color: #c9a227;
+    font-size: 40px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav{
+    border-top: 1px solid #c9a15b;
+    padding-top: 15px;
+}
+
+nav ul li a {
+    color: #FFF9FA;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #E8B8C7; 
+    color: #2B2426;
+    border-radius: 6px;
+}
+
+/*Texto del banner*/
+
+.banner-texto{
+    max-width: 600px;
+}
+
+.banner-texto span{
+    color: #1A1A1A;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.banner-texto h2{
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.banner-texto p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Imagen */
+
+.banner-imagen {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-imagen img {
+    width: 280px;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.banner-oferta:hover .banner-imagen img {
+    transform: scale(1.08);
+}
+
+/*Banner de oferta*/
+
+.banner-oferta{
+    position: relative;
+    width: 100vw;
+    min-height: 100px;
+    padding: 60px 20px;
+    margin: 300px calc(-50vw + 50%) 0 calc(-50vw + 50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(64, 64, 64, 0.165), rgba(62, 62, 62, 0.55)), url("../img/descuento.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    border-bottom: 4px solid #c9a227;
+    animation-name: bajar;
+    animation-duration: 1s;
+}
+
+@keyframes bajar{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/*PRODUCTOS - Secciones por categoría*/
+.categoria {
+    margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: center;
+    animation: aparecerProductos 0.8s ease-in;
+}
+
+.categoria h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #2b2426;
+    border-bottom: 2px solid #c9a15b;
+}
+
+/*=====================================
+  PRODUCTOS - Cuadrícula (Grid)
+=====================================*/
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .grid-productos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .grid-productos { grid-template-columns: 1fr; }
+}
+
+/*=====================================
+  PRODUCTOS - Tarjeta individual (Transición)
+=====================================*/
+.producto {
+    background-color: #ffffff;
+    border: 2px solid #c9a227;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 12px 0 6px;
+    font-size: 1.1rem;
+    color: #2b2426;
+}
+
+.producto p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.precio {
+    font-weight: bold;
+    color: #a15c2b;
+    margin-top: 8px;
+}
+
+/*PRODUCTOS - Etiqueta "Nuevo" (Position)*/
+.producto-img-wrapper {
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c9a227;
+    color: #ffffff;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+/*PRODUCTOS - Animación de aparición*/
+@keyframes aparecerProductos {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*footer*/
+
+.footer{
+    background-color: #2B2426;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 4px solid #c9a15b;
+}
+
+.footer h2 {
+    color: #c9a15b;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer li {
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
