@@ -1,0 +1,85 @@
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.banner {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.banner-img {
+    width:100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+.categooria {
+    margin-bottom: 50px;
+    padding: 0 20px;
+    animation: fadeIn 0.8s case-in;
+}
+.categoria h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a15c6e;
+}
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap:25px;
+}
+@media (max-width: 768px) {
+    .grid-productos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .grid-productos { grid-template-columns: 1fr; }
+}
+
+/* ===== TARJETA DE PRODUCTO (Transición) ===== */
+.producto {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 { margin: 12px 0 6px; font-size: 1.1rem; }
+.producto p { font-size: 0.9rem; color: #555; }
+.precio { font-weight: bold; color: #c2185b; margin-top: 8px; }
+* ===== POSITION — etiqueta "Nuevo" sobre la imagen ===== */
+.producto-img-wrapper {
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c2185b;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+/* ===== ANIMACIÓN — fade-in de las secciones ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
