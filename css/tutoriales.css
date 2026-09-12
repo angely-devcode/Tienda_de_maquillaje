@@ -1,0 +1,271 @@
+/*Estilos generales*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fce7ef;
+    color: #2b2426;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    padding-top: 280px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+/* Encabezado */
+
+header{
+    background-color: #2b2426;
+    padding: 20px 40px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 4px solid #c9a15b;
+}
+
+.logo-blushe{
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1{
+    margin: 0px 0 15px;
+    color: #c9a227;
+    font-size: 40px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav{
+    border-top: 1px solid #c9a15b;
+    padding-top: 15px;
+}
+
+nav ul li a {
+    color: #FFF9FA;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #E8B8C7; 
+    color: #2B2426;
+    border-radius: 6px;
+}
+
+/* Videos */
+
+.videos {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.videos h2 {
+    display: inline-block;
+    color: #2b2426;
+    border-bottom: 2px solid #c9a15b;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.grid-videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.video-card {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #c9a227;
+    background-color: #2b2426;
+}
+
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-card--abajo {
+    margin-top: 40px;
+}
+
+.video-titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    background: rgba(43, 36, 38, 0.75);
+    color: #ffffff;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* Tips */
+
+.tips {
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.tips h2 {
+    display: inline-block;
+    color: #2b2426;
+    border-bottom: 2px solid #c9a15b;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.lista-tips {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.lista-tips li {
+    background-color: #ffffff;
+    border-left: 4px solid #c9a227;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+
+/* Preguntas frecuentes */
+
+.faq {
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.pregunta {
+    background-color: #ffffff;
+    border: 1px solid #c9a227;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.pregunta-texto {
+    font-weight: bold;
+    color: #2b2426;
+    margin: 0;
+}
+
+.respuesta {
+    color: #555;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+.pregunta:hover .respuesta {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+
+/* Formulario de preguntas frecuentes */
+
+.faq-formulario {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.faq-formulario h3 {
+    color: #2b2426;
+    margin-bottom: 5px;
+}
+
+.faq-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 15px auto 0;
+}
+
+.faq-formulario label {
+    text-align: left;
+    font-weight: bold;
+    color: #2b2426;
+}
+
+.faq-formulario textarea {
+    padding: 10px;
+    border: 2px solid #c9a227;
+    border-radius: 8px;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-formulario textarea:focus {
+    outline: none;
+    border-color: #E8B8C7;
+    box-shadow: 0 0 6px rgba(201, 162, 39, 0.5);
+}
+
+/* Botón de envío del formulario */
+
+.faq-formulario .btn-enviar {
+    background-color: #C9A15B;
+    color: #2B2426;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.faq-formulario .btn-enviar:hover {
+    background-color: #E8B8C7;
+    transform: scale(1.05);
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #2b2426;
+    color: #FFF9FA;
+    text-align: center;
+    padding: 20px 40px;
+    border-top: 4px solid #c9a15b;
+}
+
