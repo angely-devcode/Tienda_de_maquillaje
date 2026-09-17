@@ -1,0 +1,171 @@
+/*Estilos generales*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fce7ef;
+    color: #2b2426;
+}
+
+main{
+    padding: 40px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+.instrument-serif-regular {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Encabezado */
+
+header{
+    background-color: #2b2426;
+    padding: 20px 40px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 4px solid #c9a15b;
+}
+
+.logo-blushe{
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1{
+    margin: 0px 0 15px;
+    color: #c9a227;
+    font-size: 40px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav{
+    border-top: 1px solid #c9a15b;
+    padding-top: 15px;
+}
+
+nav ul li a {
+    color: #FFF9FA;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.2 ease;
+}
+
+nav ul li a:hover {
+    background-color: #E8B8C7; 
+    color: #2B2426;
+    border-radius: 7px;
+}
+
+/*footer*/
+
+.footer{
+    background-color: #2B2426;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 60px;
+    border-top: 4px solid #c9a15b;
+}
+
+.footer h2 {
+    color: #c9a15b;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer li {
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*Icono de redes sociales*/
+
+.footer li p:first-child::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.footer li:nth-child(1) p:first-child::before{
+    background-image: url(../img/Instagram-Logo.png);
+}
+.footer li:nth-child(2) p:first-child::before{
+    background-image: url(../img/tiktok-logo.png);
+}
+.footer li:nth-child(3) p:first-child::before{
+    background-image: url(../img/facebook-logo.png);
+}
+
+/*Botones*/
+
+.botones-estilo {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-estilo {
+    background-color: #C9A15B; 
+    color: #2B2426; 
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-estilo:hover {
+    background-color: #E8B8C7; 
+    transform: scale(1.05);
+}
