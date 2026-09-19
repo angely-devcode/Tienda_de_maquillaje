@@ -117,18 +117,7 @@
     color: #2B2426;
 }
 
-.formulario-contacto input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #C9A15B;
-    border-radius: 6px;
-    background-color: #FCE7EF;
-    color: #2B2426;
-    font-family: inherit;
-    font-size: 15px;
-}
-
-.formulario-contacto textarea {
+.formulario-contacto input , .formulario-contacto textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #C9A15B;
@@ -172,6 +161,10 @@
 .formulario-contacto button:hover{
     background-color: #E8B8C7;
     transform: scale(1.05);
+}
+
+.formulario-contacto label + input {
+    border-color: #C9A15B;
 }
 
 /*animación*/
