@@ -78,4 +78,48 @@ aside {
     font-size: 18px;
 }
 
+/* Controles de Cantidad */
+.control-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+}
 
+.btn-cantidad {
+    background-color: #F7D1DE;
+    color: #2B2426;
+    border: 1px solid #C9A15B;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-cantidad:hover {
+    background-color: #C9A15B;
+    color: #ffffff;
+}
+
+.input-cantidad {
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #C9A15B;
+    border-radius: 4px;
+}
+
+.btn-eliminar {
+    background: transparent;
+    border: none;
+    color: #2B2426;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.btn-eliminar:hover {
+    color: #d1706d;
+}
