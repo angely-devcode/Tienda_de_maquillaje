@@ -47,8 +47,66 @@
                             <h3>Base de Maquillaje Velvet</h3>
                             <p class="tono-producto">Tono: Beige Natural</p>
                             <span class="precio-unidad">$43.000 COP</span>
-                </article>
+                    </div>
+                    <div class="control-cantidad">
+                            <button type="button" class="btn-cantidad">-</button>
+                            <input type="number" value="1" min="1" class="input-cantidad" aria-label="Cantidad">
+                            <button type="button" class="btn-cantidad">+</button>
+                        </div>
+                        <button type="button" class="btn-eliminar" aria-label="Eliminar producto">&times;</button>
+                    </article>      
+                    
+                <article class="item-producto">
+                        <img src="imgs/img produc/Paleta de sombras.png" alt="Paleta de sombras" class="img-producto">
+                        <div class="detalles-producto">
+                            <h3>Paleta de Sombras Warm Nude</h3>
+                            <p class="tono-producto">Edición Especial</p>
+                            <span class="precio-unidad">$38.000 </span>
+                        </div>
+                        <div class="control-cantidad">
+                            <button type="button" class="btn-cantidad">-</button>
+                            <input type="number" value="1" min="1" class="input-cantidad" aria-label="Cantidad">
+                            <button type="button" class="btn-cantidad">+</button>
+                        </div>
+                        <button type="button" class="btn-eliminar" aria-label="Eliminar producto">&times;</button>
+                    </article>
 
+                </div> 
+                <aside class="resumen-compra">
+                    <h3 class="titulo-resumen">Resumen de Compra</h3>
+                    
+                    <div class="fila-resumen">
+                        <span>Subtotal:</span>
+                        <span>$81.000</span>
+                    </div>   
+
+                    <div class="fila-resumen">
+                        <span>Envío:</span>
+                        <span>$10.000 COP</span>
+                    </div>
+
+                    <div class="bloque-cupon">
+                        <input type="checkbox" id="check-cupon" class="toggle-cupon">
+                        <label for="check-cupon" class="lbl-cupon">¿Tienes un código de descuento?</label>
+                        <div class="caja-cupon">
+                            <input type="text" placeholder="Ingresa tu cupón" class="input-cupon">
+                            <button type="button" class="btn-cupon">Aplicar</button>
+                        </div>
+          
+                    <hr class="linea-divisora">
+
+                    <div class="fila-resumen total-pedido">
+                        <span>Total:</span>
+                        <span>$91.000 COP</span>
+                    </div>
+
+                    <button type="button" class="btn-checkout">Finalizar Compra</button>
+                    
+                    <div class="botones-estilo">
+                        <a href="productos.html" class="btn-estilo">Seguir comprando</a>
+                    </div>
+                </aside>
+                    </div>
             </section>
         </main>
         <footer class="footer">
