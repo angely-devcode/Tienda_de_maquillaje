@@ -1,0 +1,40 @@
+/*Estilos generales del carrito de compras*/
+
+/*ID selector (#) */
+#seccion-carrito {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Tagname Selector (aside) */
+aside {
+    background-color: #ffffff;
+    border: 2px solid #C9A15B;
+    border-radius: 10px;
+    padding: 25px;
+    height: fit-content;
+}
+
+/* Class Selector (.) */
+.lista-productos-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 2px solid #C9A15B;
+    border-radius: 10px;
+    padding: 15px 20px;
+    position: relative;
+    /* Transición (Requerimiento) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
