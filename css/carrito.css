@@ -35,7 +35,6 @@ aside {
     border-radius: 10px;
     padding: 15px 20px;
     position: relative;
-    /* Transición (Requerimiento) */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -167,14 +166,13 @@ aside {
     font-weight: bold;
     cursor: pointer;
     margin: 15px 0;
-    /* Animación aplicada */
-    animation: pulsoBoton 2s infinite;
+    animation: pulsoBoton 3s infinite;
 }
 
-/* Definición de Keyframes de Animación */
+
 @keyframes pulsoBoton {
     0% {
-        box-shadow: 0 0 0 0 rgba(201, 161, 91, 0.7);
+        box-shadow: 0 0 0 0 rgba(215, 165, 79, 0.7);
     }
     70% {
         box-shadow: 0 0 0 10px rgba(201, 161, 91, 0);
