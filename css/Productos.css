@@ -50,7 +50,7 @@
     width: 100vw;
     min-height: 100px;
     padding: 60px 20px;
-    margin: 300px calc(-50vw + 50%) 0 calc(-50vw + 50%);
+    margin: 260px calc(-50vw + 50%) 0 calc(-50vw + 50%);
     display: flex;
     justify-content: center;
     text-align: center;

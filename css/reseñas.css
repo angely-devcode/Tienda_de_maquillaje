@@ -1,0 +1,100 @@
+main {
+    padding: 300px 40px 50px;
+}
+
+.reseñas-clientes{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reseñas-clientes > h2 {
+    color: #4a4144;
+    padding: 25px 30px;
+    margin: 0 0 45px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    border-top: 3px solid #c9a227;
+    border-bottom: 3px solid #c9a227;
+    border-radius: 10px;
+}
+
+.reseña-clientes{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    margin-bottom: 70px;
+    background-color: #fff9fa;
+    border-radius: 15px;
+    transition: transform 0.3 ease, box-shadow 0.3s ease;
+    animation: aparecer 0.8s ease;
+}
+
+.reseña-clientes>img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.texto-reseñas {
+    flex: 1;
+}
+
+.texto-reseñas h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.texto-reseñas p{
+    margin: 0;
+    line-height: 1.6;
+}
+
+.texto-reseñas h3 , .texto-reseñas p {
+    font-family: "Playfair Display", serif;
+}
+
+.texto-reseñas h3 + p {
+    margin-top: 10px;
+}
+
+.texto-reseñas h3 ~ p {
+    color: #4a4144;
+}
+
+.reseña-clientes:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px rgba(43, 36, 38, 0.2);
+}
+
+.reseña-clientes::before{
+    content: "";
+    font-size: 50px;
+    color: #c9a227;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reseñas-clientes > h2::before {
+    content: "✦";
+    color: #c9a227;
+    margin-right: 12px;
+}
+
+.reseñas-clientes > h2::after {
+    content: "✦";
+    color: #c9a227;
+    margin-left: 12px;
+}
