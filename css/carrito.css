@@ -59,3 +59,23 @@ aside {
     margin-left: 20px;
 }
 
+/* Combinación de selectores (Descendiente) */
+.detalles-producto h3 {
+    color: #2B2426;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.tono-producto {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.precio-unidad {
+    color: #C9A15B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
