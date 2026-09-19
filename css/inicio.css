@@ -52,6 +52,14 @@
     margin-bottom: 30px;
 }
 
+.banner-texto h2 + p{
+    font-size: italic;
+}
+
+.banner-texto h2, .banner-texto p{
+    color: #1A1A1A;
+}
+
 
 
 /* Imagen */
