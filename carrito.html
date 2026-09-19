@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blushé - Carrito de Compras</title>
         <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/inicio.css">
         <link rel="stylesheet" href="css/carrito.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +13,43 @@
     </head>
     <body> 
         <header>    
+            <img src="img/logo.png" alt="Blushé" alt="Logo Blushe" class="logo-blushe">
 
-        </header> 
+            <nav aria-label="Navegación Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="reseñas.html">Reseñas</a></li>
+                    <li><a href="carrito.html" class="active">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+        
         <section>
-
+            <div class="banner-texto">
+                <span>TU SELECCIÓN ESPECIAL</span>
+                <h2>Tu Carrito de Compras</h2>
+                <p>Estás a un solo paso de resaltar tu belleza con la mejor cosmética consciente.</p>
+            </div>
         </section>
-        <main>
 
+        <main>
+            <section class="seccion-destacada">
+                <h2>Revisa tu pedido antes de finalizar</h2>
+                <p>Verifica los productos seleccionados y aplica tu código promocional.</p>
+            </section>
+            <section id="seccion-carrito" class="seccion-carrito">
+                <article class="item-producto">
+                    <img src="imgs/img produc/Base.png" aly="Base de maquillaje" class="img-producto">
+                    <div class="detalles-producto">
+                            <h3>Base de Maquillaje Velvet</h3>
+                            <p class="tono-producto">Tono: Beige Natural</p>
+                            <span class="precio-unidad">$43.000 COP</span>
+                </article>
+
+            </section>
         </main>
         <footer class="footer">
             <p>Belleza consciente, libre de crueldad y hecha para resaltar tu esencia.</p>
